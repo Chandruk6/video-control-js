@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video-js</title>
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+   <video id="myVideo" width="100%">
+    <source id="mp4_src" src="image/VN20221228_213503 (1).mp4" type="video/mp4"></video>
+       <button id="btn" type="button"><i class="fa-solid fa-play"></i></button>
+       
+      <script>
+        let video = document.getElementById("myVideo");
+         let button = document.getElementById("btn"); 
+      button.addEventListener('click',()=>{
+ if (video.paused){
+    video.play();
+    button.innerHTML = '<i class="fa-solid fa-pause"></i>';
+ }
+ else
+{
+video.pause();
+button.innerHTML = '<i class="fa-solid fa-play"></i>';
+}      });
+            </script>
+        
+   
+</body>
+</html>
